@@ -6,8 +6,10 @@ import zeusEdge.generaDriverEdge;
 import zeusFirefox.generaDriverFirefox;
 import zeusInternetExplorer.generaInternetExplorer;
 
+import java.io.IOException;
+
 public class automatizacionIndex {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws Exception {
         fileProperties file = new fileProperties();
         boolean varChrome, varFirefox, varEdge, varIE;
         varChrome = Boolean.parseBoolean(file.getProperty().getProperty("chrome"));
