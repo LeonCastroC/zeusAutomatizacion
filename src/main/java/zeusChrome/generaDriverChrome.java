@@ -1,15 +1,24 @@
 package zeusChrome;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import utils.TomarEvidencias;
 import utils.fileProperties;
+
+import java.io.File;
+import java.io.IOException;
 
 import static java.lang.Thread.sleep;
 
 public class generaDriverChrome {
     public static WebDriver chromeDriver;
     public static fileProperties archivo = new fileProperties();
+
+    TomarEvidencias tomarEvidencias = new TomarEvidencias();
     public static WebDriver generaDriverChrome(){
         String driverPathChrome = "drivers/chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", driverPathChrome);
@@ -18,13 +27,20 @@ public class generaDriverChrome {
         return chromeDriver;
     }
 
-    public WebDriver ejecutaLoginChrome () throws InterruptedException {
+    public WebDriver ejecutaLoginChrome () throws Exception {
         //Genera el controlador
         generaDriverChrome();
         sleep(3000);
         //Inicio de sesión
-        chromeDriver.findElement(By.xpath("/html/body/div[1]/header[1]/div/div[1]/div[2]/a[1]")).click();
+        chromeDriver.findElement(By.cssSelector(".HlPFP > .UiEmailSignupstyles__InputEmail-sc-9nggyw-1")).click();
         sleep(2000);
+        tomarEvidencias.tomaEvidenciaFoto(chromeDriver);
+        chromeDriver.findElement(By.cssSelector(".HlPFP > .UiEmailSignupstyles__InputEmail-sc-9nggyw-1")).sendKeys(archivo.getProperty().getProperty("usuario"));
+        sleep(2000);
+        tomarEvidencias.tomaEvidenciaFoto(chromeDriver);
+        chromeDriver.findElement(By.cssSelector(".gToSzH > button")).click();
+        sleep(2000);
+        tomarEvidencias.tomaEvidenciaFoto(chromeDriver);
         chromeDriver.findElement(By.xpath("//*[@id='user']")).sendKeys(archivo.getProperty().getProperty("usuario"));
         sleep(2000);
         chromeDriver.findElement(By.xpath("//*[@id='login']")).click();
