@@ -9,11 +9,19 @@ import static java.lang.Thread.sleep;
 
 public class generaDriverFirefox {
     public static WebDriver firefoxDriver;
+    private static String versionSO = System.getProperty("os.name").toLowerCase();
     public static fileProperties archivo = new fileProperties();
+    static String driverPathFirefox;
 
     public static WebDriver generaDriverFirefox(){
-        String driverPathFirefox = "drivers/geckodriver.exe";
-        System.setProperty("webdriver.gecko.driver", driverPathFirefox);
+        if(versionSO.contains("windows")) {
+            driverPathFirefox = "drivers/windows/geckodriver.exe";
+            System.setProperty("webdriver.gecko.driver", driverPathFirefox);
+        }
+        if(versionSO.contains("mac")) {
+            driverPathFirefox = "drivers/mac/geckodriver";
+            System.setProperty("webdriver.gecko.driver", driverPathFirefox);
+        }
         firefoxDriver = new FirefoxDriver();
         firefoxDriver.get(archivo.getProperty().getProperty("url"));
         return firefoxDriver;

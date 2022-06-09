@@ -12,10 +12,19 @@ public class generaDriverEdge {
 
     public static WebDriver edgeDriver;
     public static fileProperties archivo = new fileProperties();
+    private static String versionSO = System.getProperty("os.name").toLowerCase();
+    static String driverPathEdge;
+
 
     public static WebDriver generaEdge(){
-        String driverPathEdge = "drivers/edgedriver.exe";
-        System.setProperty("webdriver.edge.driver", driverPathEdge);
+        if(versionSO.contains("windows")) {
+            driverPathEdge = "drivers/windows/edgedriver.exe";
+            System.setProperty("webdriver.edge.driver", driverPathEdge);
+        }
+        if(versionSO.contains("mac")) {
+            driverPathEdge = "drivers/mac/edgedriver";
+            System.setProperty("webdriver.edge.driver", driverPathEdge);
+        }
         edgeDriver = new EdgeDriver();
         edgeDriver.get(archivo.getProperty().getProperty("url"));
         return edgeDriver;

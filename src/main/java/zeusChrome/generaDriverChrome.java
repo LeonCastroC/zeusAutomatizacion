@@ -16,12 +16,20 @@ import static java.lang.Thread.sleep;
 
 public class generaDriverChrome {
     public static WebDriver chromeDriver;
+    private static String versionSO = System.getProperty("os.name").toLowerCase();
     public static fileProperties archivo = new fileProperties();
 
     TomarEvidencias tomarEvidencias = new TomarEvidencias();
+    static String driverPathChrome;
     public static WebDriver generaDriverChrome(){
-        String driverPathChrome = "drivers/chromedriver.exe";
-        System.setProperty("webdriver.chrome.driver", driverPathChrome);
+        if(versionSO.contains("windows")) {
+            driverPathChrome = "drivers/windows/chromedriver.exe";
+            System.setProperty("webdriver.chrome.driver", driverPathChrome);
+        }
+        if(versionSO.contains("mac")) {
+            driverPathChrome = "drivers/mac/chromedriver";
+            System.setProperty("webdriver.chrome.driver", driverPathChrome);
+        }
         chromeDriver = new ChromeDriver();
         chromeDriver.get(archivo.getProperty().getProperty("url"));
         return chromeDriver;

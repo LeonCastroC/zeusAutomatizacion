@@ -4,14 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df670b8f-ffc1-43b9-9ced-82032cc61944" name="Changes" comment="" />
+    <list default="true" id="df670b8f-ffc1-43b9-9ced-82032cc61944" name="Changes" comment="CASLEO - Actualizacion de archivos">
+      <change afterPath="$PROJECT_DIR$/drivers/mac/chromedriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drivers/mac/edgedriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drivers/mac/geckodriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drivers/windows/IEDriverServer.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drivers/windows/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drivers/windows/edgedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drivers/windows/geckodriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Evidencias/Imagenes/paso1_090622_125335.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Evidencias/Imagenes/paso2_090622_125337.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Evidencias/Imagenes/paso3_090622_125343.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zeusSafari/generaDriverSafari.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/IEDriverServer.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/edgedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/geckodriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parametros.properties" beforeDir="false" afterPath="$PROJECT_DIR$/parametros.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zeusChrome/generaDriverChrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zeusChrome/generaDriverChrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zeusEdge/generaDriverEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zeusEdge/generaDriverEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zeusFirefox/generaDriverFirefox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zeusFirefox/generaDriverFirefox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/zeus/automatizacionIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zeus/automatizacionIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/TomarEvidencias.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/TomarEvidencias.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/fileProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/fileProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zeusChrome/generaDriverChrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zeusChrome/generaDriverChrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zeusEdge/generaDriverEdge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zeusEdge/generaDriverEdge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zeusFirefox/generaDriverFirefox.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zeusFirefox/generaDriverFirefox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/zeusInternetExplorer/generaInternetExplorer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/zeusInternetExplorer/generaInternetExplorer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/zeus/automatizacionIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/zeus/automatizacionIndex.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -21,6 +60,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2AJeugzODTVaPlQNHvUzxED9fGB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,6 +73,28 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="automatizacionIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="zeus.automatizacionIndex" />
+      <module name="automatizacionZeus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zeus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.automatizacionIndex" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,6 +104,14 @@
       <option name="presentableId" value="Default" />
       <updated>1654732341600</updated>
     </task>
+    <task id="LOCAL-00001" summary="CASLEO - Actualizacion de archivos">
+      <created>1654795427269</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654795427269</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -52,5 +124,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CASLEO - Actualizacion de archivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="CASLEO - Actualizacion de archivos" />
   </component>
 </project>
